@@ -7,6 +7,8 @@ export ZSH=/home/gavin/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="agnoster"
 
+[ -f /etc/zsh_command_not_found ] && . /etc/zsh_command_not_found
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -82,4 +84,4 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias dkr="docker"
+alias dkr="sudo docker"
